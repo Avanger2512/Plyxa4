@@ -1,0 +1,30 @@
+{% set steps = [
+  {
+    icon: 'steam',
+    title: 'Provide your friend Steam account url.',
+    text: 'Step 01'
+  },
+  {
+    icon: 'add-friend',
+    title: 'Accept a friend request from us.',
+    text: 'Step 02'
+  },
+  {
+    icon: 'box',
+    title: 'We send you a gift in Steam.',
+    text: 'Step 04'
+  }
+]%}
+
+<div class="steps">
+  {% for item in steps %}
+  <div class="steps__item {% if loop.first%} is-active {% endif%}">
+    <div class="steps__pic">
+      <img src="./img/{{item.icon}}.svg" alt="">
+
+    </div>
+    <div class="steps__title">{{item.title}}</div>
+    <div class="steps__desc">{{item.text}}</div>
+  </div>
+  {% endfor %}
+</div>

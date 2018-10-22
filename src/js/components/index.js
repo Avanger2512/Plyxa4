@@ -1,0 +1,2 @@
+
+import './input-detect.js'

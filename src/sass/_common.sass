@@ -1,0 +1,55 @@
+//fonts
+
++font('FuturaBold', 'FuturaBold')
++font('RobotoRegular', 'RobotoRegular')
++font('RobotoMedium', 'RobotoMedium')
+
+=futura-b
+  font-family: "FuturaBold", Arial, Helvetica, sans-serif
+  font-weight: 600
+
+=roboto-r
+  font-family: "RobotoRegular", Arial, Helvetica, sans-serif
+  font-weight: 400
+
+=roboto-m
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif
+  font-weight: 500
+
+html, body
+  height: 100%
+
+
+.wrapper
+  min-height: 100%
+  &__inside
+    padding-bottom: 80px
+
+body
+  font-size: 20px
+  line-height: 1.4
+  min-width: 320px
+  background: url('../img/bg.jpg') #000 no-repeat
+  background-position: 0 100%
+  color: #fff
+  +smooth-font
+  +roboto-r
+
+a
+  text-decoration: none
+
+button
+  background: transparent
+
+.text-center
+  text-align: center
+
+.container
+  max-width: 1275px
+  margin: 0 auto
+  padding: 0 40px
+  +clr
+  +sm
+    padding: 0 15px
+  &_sm
+    max-width: 1024px

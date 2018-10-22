@@ -1,0 +1,106 @@
+.form-el
+  border-radius: 20px
+  box-shadow: 0 17px 50px 0 rgba(#000, .2)
+
+.btn
+  display: inline-block
+  vertical-align: middle
+  color: #fff
+  padding: 14px 26px
+  background-image: linear-gradient(125deg, #F8906C, #F76FB2)
+  font-size: 18px
+  +futura-b
+  &:hover
+    background-image: linear-gradient(125deg, #F8906C, #FD50A5)
+  &_steam
+    &:before
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      width: 54px
+      height: 31px
+      background: url('../img/steam-icon.svg') no-repeat
+      background-size: contain
+      margin-right: 5px
+
+.input
+  white-space: nowrap
+  overflow: hidden
+  display: flex
+  flex-flow: row nowrap
+  min-height: 59px
+  +tr(transform .3s ease-in-out)
+  input
+    width: 100%
+    padding: 5px 26px
+    background: #fff
+    color: $black
+    border: none
+    font-size: 18px
+    +tr(background .15s ease-in-out)
+
+    +placeholder
+      color: $violet-light
+      font-size: 18px
+      +tr(color .15s ease-in-out)
+  &:hover
+    transform: scale(1.15, 1.15)
+  &.is-empty
+    input
+      background: linear-gradient(125deg, #31294D, #524588)
+      color: $black
+    &:hover
+      input
+        background: #fff
+        &::placeholder
+          color: transparent
+  // .btn
+  //   float: right
+
+
+.form
+  display: flex
+  flex-flow: row nowrap
+  align-items: flex-start
+  justify-content: space-between
+  max-width: 900px
+  margin: 0 auto
+  &__item
+    &:first-child
+      max-width: 488px
+      flex-basis: 488px
+    // &:last-child
+    //   max-width: 340px
+    //   flex-basis: 340px
+    &:hover
+      .form__desc
+        opacity: 1
+    &.is-error
+      .form__title
+        color: $orange
+      .form__error
+        display: block
+        color: $orange
+  &__title
+    text-align: center
+    font-size: 18px
+    margin-bottom: 20px
+    +futura-b
+  &__error
+    display: none
+    padding-top: 20px
+    text-align: center
+
+  &__desc
+    text-align: center
+    padding: 20px 40px
+    opacity: 0
+    font-size: 18px
+    color: #fff
+    +tr(opacity .15s ease-in-out)
+    +roboto-r
+    > a
+      color: $green
+      +tr(opacity .3s ease-in-out)
+      &:hover
+        opacity: .7
