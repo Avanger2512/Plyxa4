@@ -6,7 +6,6 @@ $steps-radius: 50px
   display: flex
   flex-flow: row nowrap
   border-radius: $steps-radius
-  // overflow: hidden
   box-shadow: 0 2px 96px 0 rgba(#000, .25)
   +r(1024)
     margin-left: 25%
@@ -20,7 +19,6 @@ $steps-radius: 50px
     text-align: center
     flex-basis: 33.3%
     max-width: 33.3%
-    // border-radius: $steps-radius
     background-image: linear-gradient(to right, #2A2049, #473C78)
     +sm
       padding-left: 30px
@@ -85,3 +83,54 @@ $steps-radius: 50px
     color: #fff
     +sm
       font-size: 14px
+  &_mod
+    +r(1024)
+      margin-left: auto
+      min-width: auto
+    +sm
+      flex-flow: column nowrap
+      box-shadow: none
+      min-width: auto
+      margin: 30px -15px 35px -15px
+    .steps__item
+      position: relative
+      max-width: 50%
+      flex-basis: 50%
+      box-shadow: none
+      background-position: center center
+      min-height: 188px
+      padding: 0
+      &:after
+        box-shadow: 0 17px 50px 0 #906BD7
+      +sm
+        max-width: 100%
+        flex-basis: 100%
+        min-height: 150px
+        border-radius: 0
+        background-size: 160%
+        background-position: 50% 50%
+        &:after,
+        &:before
+          right: auto
+          top: auto
+          transform: translate(0, 0)
+          bottom: -21px
+          left: 50%
+          transform: translate(-50%, 0)
+        &:before
+          bottom: -9px
+          margin-right: 14px
+        &:last-child
+          .steps__title
+            bottom: auto
+            top: 35px
+    .steps__title
+      position: absolute
+      bottom: 25px
+      left: 50%
+      width: 100%
+      transform: translateX(-50%)
+      color: #fff
+      +futura-b
+      +sm
+        font-size: 18px

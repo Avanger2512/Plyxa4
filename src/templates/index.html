@@ -1,50 +1,15 @@
 ---
-title: Index page
+title: Pages
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
-
-<div class="container container_sm">
-  <div class="text-center">
-    <h1>Code Activation</h1>
-    <h5>Blood and Bacon будет отрправлен на Steam аккаунт <span>Vika_Pirate</span>.</h5>
+  <div class="container">
+    <ul>
+      <li><a href="/main.html" target="_blank" style="color: #fff">/main.html</a></li>
+      <li><a href="/second-step.html" target="_blank" style="color: #fff">/second-step.html</a></li>
+    </ul>
   </div>
-
-  {% include './partials/_steps.html'%}
-
-
-
-  <form action="/" class="form">
-    <!-- toggle class 'is-error for error message' -->
-    <div class="form__item is-error2">
-      <div class="form__title">Use Steam Profile URL</div>
-
-      <div class="input form-el">
-        <input type="text" placeholder="Put here recipient Steam Profile URL" class="js-input">
-        <button type="button" class="btn btn_nomedia">Next</button>
-      </div>
-
-      <div class="form__error">*error, please put correct id</div>
-
-      <div class="form__desc">Use this option for sending to your friend or yourself.
-        <a href="#">How to find URL?</a>
-        <br>
-        <br>
-        Allowed formats:
-        https://steamcommunity.com/profiles/***
-        https://steamcommunity.com/id/***
-      </div>
-    </div>
-    <div class="form__item">
-      <div class="form__title">Log in with Steam</div>
-
-      <a href="#" class="form-el btn btn_steam">Sign in throuth STEAM</a>
-
-      <div class="form__desc">Only for sending to <br> yourself.</div>
-    </div>
-  </form>
-</div>
 
 {% endblock %}

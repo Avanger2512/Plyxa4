@@ -1,0 +1,54 @@
+---
+title: Second step page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<div class="container container_xs">
+  <div class="text-center">
+    <h1>Code Activation</h1>
+  </div>
+
+  <div class="steps steps_mod">
+    <div class="steps__item is-active" style="background-image: url('./img/game.png')">
+      <div class="steps__title">Blood and Bacon</div>
+    </div>
+    <div class="steps__item" style="background-image: url('./img/avatar.png')">
+      <div class="steps__title">Vika_Pirate</div>
+    </div>
+  </div>
+
+
+
+  <form action="/" class="form text-center">
+
+    <div class="form__line">
+      <div class="form__title form__title_width">Введите почту и укажите регион аккаунта</div>
+
+      <div class="form__cols">
+        <div class="input input_mod form-el">
+          <input type="text" placeholder="Нам нужна почта для уведомлений" >
+        </div>
+
+        <div class="select form-el">
+          <select name="" class="" id="">
+            {% for i in range(0,5)%}
+            <option value="">Украина</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+
+        <div class="form__title">Учтите - товар нельзя принять инвентарь! <br> Эта ссылка будет привязана к указанному ниже аккаунту</div>
+
+
+        <a href="#" class="form-el btn btn_width ">Activate</a>
+      </div>
+
+
+  </form>
+</div>
+
+{% endblock %}

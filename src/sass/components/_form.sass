@@ -6,7 +6,7 @@
   display: inline-block
   vertical-align: middle
   color: #fff
-  padding: 14px 26px
+  padding: 17px 26px
   text-align: center
   background-image: linear-gradient(125deg, #F8906C, #F76FB2)
   font-size: 18px
@@ -28,10 +28,15 @@
       height: 31px
       background: url('../img/steam-icon.svg') no-repeat
       background-size: contain
-      margin-right: 5px
+      margin: -5px 5px -5px
       +sm
         width: 43px
         height: 25px
+  &_width
+    width: 100%
+    max-width: 281px
+    +md
+      max-width: 100%
 
 .input
   white-space: nowrap
@@ -58,7 +63,7 @@
       +tr(color .15s ease-in-out)
       +sm
         font-size: 11px
-  &:hover
+  &:not(.input_mod):hover
     transform: scale(1.15, 1.15)
     +sm
       transform: none
@@ -71,6 +76,15 @@
         background: #fff
         &::placeholder
           color: transparent
+  &_mod
+    width: 407px
+    flex-basis: 407px
+    margin-right: 15px
+    +sm
+      width: 100%
+    input
+      background: linear-gradient(125deg, #31294D, #524588)
+      color: rgba(#fff, .48)
 
 .form
   display: flex
@@ -92,9 +106,6 @@
       +r(1024)
         max-width: 100%
         flex-basis: auto
-    // &:last-child
-    //   max-width: 340px
-    //   flex-basis: 340px
     &:hover
       .form__desc
         opacity: 1
@@ -106,6 +117,25 @@
       .form__error
         display: block
         color: $orange
+  &__line
+    margin-bottom: 40px
+    +sm
+      margin-bottom: 60px
+      width: 100%
+  &__cols
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    margin-bottom: 25px
+    +sm
+      display: block
+    & + .form__title
+      margin-bottom: 35px
+      +sm
+        margin-bottom: 30px
+    .input
+      +sm
+        margin-bottom: 15px
   &__title
     text-align: center
     font-size: 18px
@@ -113,11 +143,14 @@
     +futura-b
     +sm
       font-size: 14px
+  &__title_width
+    +sm
+      max-width: 200px
+      margin: 0 auto 20px
   &__error
     display: none
     padding-top: 20px
     text-align: center
-
   &__desc
     text-align: center
     padding: 20px 40px
@@ -135,3 +168,35 @@
       +tr(opacity .3s ease-in-out)
       &:hover
         opacity: .7
+
+.select
+  position: relative
+  display: inline-block
+  min-width: 211px
+  overflow: hidden
+  background: linear-gradient(to bottom, #A3B3FF, #90A4FF)
+  +sm
+    min-width: 160px
+  &:after
+    content: ''
+    position: absolute
+    right: 35px
+    top: 50%
+    transform: translateY(-50%)
+    width: 0
+    height: 0
+    border-left: 4px solid transparent
+    border-right: 4px solid transparent
+    border-top: 6px solid #fff
+  select
+    padding: 19px 95px 19px 26px
+    width: 120%
+    font-size: 18px
+    background: transparent
+    border: none
+    color: #fff
+    appearance: none
+    +sm
+      font-size: 14px
+      padding-top: 12px
+      padding-bottom: 12px
