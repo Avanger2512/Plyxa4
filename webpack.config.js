@@ -15,7 +15,7 @@ function createConfig(env) {
     webpackConfig = {
         context: path.join(__dirname, config.src.js),
         entry: {
-            // vendor: ['jquery'],
+            vendor: ['jquery'],
             app: './app.js'
         },
         output: {

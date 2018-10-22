@@ -13,6 +13,7 @@ $steps-radius: 50px
     min-width: 940px
   +sm
     margin: 30px 0 35px 28px
+    min-width: 750px
   &__item
     position: relative
     padding: 30px 60px 15px
@@ -21,6 +22,9 @@ $steps-radius: 50px
     max-width: 33.3%
     // border-radius: $steps-radius
     background-image: linear-gradient(to right, #2A2049, #473C78)
+    +sm
+      padding-left: 30px
+      padding-right: 30px
     &:first-child
       border-top-left-radius: $steps-radius
       border-bottom-left-radius: $steps-radius
@@ -39,6 +43,10 @@ $steps-radius: 50px
         border-radius: 50%
         transform: translateY(-50%)
         background-image:  linear-gradient(102deg, #31294D, #524588)
+        +sm
+          width: 42px
+          height: 42px
+          right: -21px
       &:before
         content: ''
         position: absolute

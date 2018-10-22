@@ -1,7 +1,4 @@
-import $ from "jquery";
-
-
-console.log('bla');
+// import $ from "../../node_modules/jquery";
 
 let input = $('.js-input');
 
@@ -17,3 +14,11 @@ input.on('keyup', function(){
         $(this).parent().removeClass("is-empty");
     }
 });
+
+
+let burger = $('.js-burger')
+
+
+burger.on('click', () => {
+  $('.header__right').toggleClass('is-open')
+})

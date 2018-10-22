@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="68px" height="82px" viewBox="0 0 68 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="28px" height="18px" viewBox="0 0 28 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 4</title>
+    <title>burger</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
@@ -9,39 +9,31 @@
             <stop stop-color="#A779FF" offset="51.8197466%"></stop>
             <stop stop-color="#A2CDFF" offset="100%"></stop>
         </linearGradient>
-        <rect id="path-2" x="0" y="0" width="28" height="2"></rect>
-        <filter x="-191.1%" y="-2125.0%" width="482.1%" height="5450.0%" filterUnits="objectBoundingBox" id="filter-3">
-            <feOffset dx="0" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.200492527 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <rect id="path-4" x="0" y="8" width="28" height="2"></rect>
-        <filter x="-191.1%" y="-2125.0%" width="482.1%" height="5450.0%" filterUnits="objectBoundingBox" id="filter-5">
-            <feOffset dx="0" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.200492527 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <rect id="path-6" x="0" y="16" width="28" height="2"></rect>
-        <filter x="-191.1%" y="-2125.0%" width="482.1%" height="5450.0%" filterUnits="objectBoundingBox" id="filter-7">
-            <feOffset dx="0" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.200492527 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
     </defs>
-    <g id="mob" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-2-Copy" transform="translate(-252.000000, -1.000000)">
-            <g id="Group-4" transform="translate(277.000000, 22.000000)">
-                <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="burger">
+            <g id="Rectangle">
+                <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                    <rect id="path-2" x="0" y="0" width="28" height="2"></rect>
                 </g>
-                <g id="Rectangle-Copy">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
-                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <g id="path-2-link" fill="url(#linearGradient-1)">
+                    <rect id="path-2" x="0" y="0" width="28" height="2"></rect>
                 </g>
-                <g id="Rectangle-Copy-2">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
-                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-6"></use>
+            </g>
+            <g id="Rectangle-Copy" transform="translate(0.000000, 8.000000)">
+                <g id="path-4-link" fill="#000000" fill-rule="nonzero">
+                    <rect id="path-4" x="0" y="0" width="28" height="2"></rect>
+                </g>
+                <g id="path-4-link" fill="url(#linearGradient-1)">
+                    <rect id="path-4" x="0" y="0" width="28" height="2"></rect>
+                </g>
+            </g>
+            <g id="Rectangle-Copy-2" transform="translate(0.000000, 16.000000)">
+                <g id="path-6-link" fill="#000000" fill-rule="nonzero">
+                    <rect id="path-6" x="0" y="0" width="28" height="2"></rect>
+                </g>
+                <g id="path-6-link" fill="url(#linearGradient-1)">
+                    <rect id="path-6" x="0" y="0" width="28" height="2"></rect>
                 </g>
             </g>
         </g>

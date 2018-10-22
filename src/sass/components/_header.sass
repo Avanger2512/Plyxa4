@@ -1,9 +1,13 @@
 .header
+  position: relative
   background: $violet
   padding: 24px 0 10px
   margin-bottom: 90px
   +md
     margin-bottom: 54px
+  +sm
+    background-image: linear-gradient(to bottom, #2B2839, rgba(#6B73B3, .34))
+    padding: 18px 0 12px
   &__in
     display: flex
     flex-flow: row nowrap
@@ -16,8 +20,16 @@
   &__link
     color: #fff
     +tr(color .3s ease-in-out)
+    +sm
+      display: block
+      text-align: center
+      line-height: 126px
+      &:hover
+        background: #3B3C5E
     &:not(:last-child)
       margin-right: 35px
+      +sm
+        margin-right: 0
     .icon-question
       color: $green
     .icon-conversation
@@ -37,3 +49,31 @@
   &__link_pink
     &:hover
       color: $pink
+  &__left
+    .header__link
+      +sm
+        display: none
+  &__right_hidden
+    +rmin(767)
+      text-align: center
+      display: none
+  &__right
+
+    &.is-open
+      +sm
+        display: block
+
+    +sm
+      display: none
+      position: absolute
+      top: 100%
+      height: calc(100vh - 104px)
+      left: 0
+      width: 100%
+      z-index: 99
+      text-align: center
+      background: linear-gradient(to bottom, #2B2839, #2E335E)
+
+.burger
+  +rmin(767)
+    display: none

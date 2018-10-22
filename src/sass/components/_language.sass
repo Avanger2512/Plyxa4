@@ -1,5 +1,8 @@
 .lang
   position: relative
+  +sm
+    display: inline-block
+    margin-top: 45px
   &:hover
     .lang__list
       opacity: 1
@@ -60,10 +63,18 @@
     flex-flow: row nowrap
     align-items: center
     background: $violet
+    +sm
+      right: auto
+      top: calc(100% + 25px)
+      flex-flow: column nowrap
+      background: transparent
     > a
       display: flex
       flex-flow: row nowrap
       min-width: 150px
+      +sm
+        &:not(:last-child)
+          margin-bottom: 25px
 
 
   &__pic_green
