@@ -2,6 +2,9 @@
   background: $violet
   padding: 25px 0
   margin-top: -80px
+  +sm
+    padding: 10px 0
+    margin-top: -48px
   &__in
     display: flex
     flex-flow: row nowrap
@@ -11,8 +14,16 @@
     color: $violet-light
     &:not(:last-child)
       margin-right: 50px
+  &__left
+    +sm
+      font-size: 14px
   &__right
     > a
       +tr(color .3s ease-in)
       &:hover
         color: $violet-hover
+      +sm
+        font-size: 13px
+        display: inline-block
+        vertical-align: top
+        padding-top: 5px

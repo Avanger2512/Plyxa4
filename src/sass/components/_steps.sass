@@ -6,15 +6,27 @@ $steps-radius: 50px
   display: flex
   flex-flow: row nowrap
   border-radius: $steps-radius
-  overflow: hidden
+  // overflow: hidden
   box-shadow: 0 2px 96px 0 rgba(#000, .25)
+  +r(1024)
+    margin-left: 25%
+    min-width: 940px
+  +sm
+    margin: 30px 0 35px 28px
   &__item
     position: relative
     padding: 30px 60px 15px
     text-align: center
     flex-basis: 33.3%
     max-width: 33.3%
+    // border-radius: $steps-radius
     background-image: linear-gradient(to right, #2A2049, #473C78)
+    &:first-child
+      border-top-left-radius: $steps-radius
+      border-bottom-left-radius: $steps-radius
+    &:last-child
+      border-top-right-radius: $steps-radius
+      border-bottom-right-radius: $steps-radius
     &:not(:last-child)
       &:after
         content: ''
@@ -51,11 +63,17 @@ $steps-radius: 50px
     margin-bottom: 5px
     > img
       max-height: 61px
+      +sm
+        max-height: 48px
   &__title
     font-size: 18px
     color: $violet-light
     line-height: 1.2
     margin-bottom: 10px
+    +sm
+      font-size: 14px
   &__desc
     font-size: 16px
     color: #fff
+    +sm
+      font-size: 14px

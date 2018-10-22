@@ -125,7 +125,7 @@ html, body {
 body {
   font-size: 20px;
   line-height: 1.4;
-  min-width: 320px;
+  min-width: 330px;
   background: url("../img/bg.jpg") #000 no-repeat;
   background-position: 0 100%;
   color: #fff;
@@ -162,6 +162,7 @@ button {
 
 .container_sm {
   max-width: 1024px;
+  overflow: hidden;
 }
 
 h1,
@@ -375,6 +376,7 @@ h5,
   flex-flow: row nowrap;
   -ms-flex-align: center;
   align-items: center;
+  background: #2B2839;
 }
 
 .lang__list > a {
@@ -408,7 +410,6 @@ h5,
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   border-radius: 50px;
-  overflow: hidden;
   box-shadow: 0 2px 96px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -420,6 +421,16 @@ h5,
   flex-basis: 33.3%;
   max-width: 33.3%;
   background-image: linear-gradient(to right, #2A2049, #473C78);
+}
+
+.steps__item:first-child {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.steps__item:last-child {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .steps__item:not(:last-child):after {
@@ -497,6 +508,7 @@ h5,
   vertical-align: middle;
   color: #fff;
   padding: 14px 26px;
+  text-align: center;
   background-image: linear-gradient(125deg, #F8906C, #F76FB2);
   font-size: 18px;
   font-family: "FuturaBold", Arial, Helvetica, sans-serif;
@@ -551,7 +563,25 @@ h5,
   transition: color 0.15s ease-in-out;
 }
 
+.input input::-moz-placeholder {
+  color: #CE9EFF;
+  font-size: 18px;
+  transition: color 0.15s ease-in-out;
+}
+
 .input input::-webkit-input-placeholder {
+  color: #CE9EFF;
+  font-size: 18px;
+  transition: color 0.15s ease-in-out;
+}
+
+.input input::-webkit-input-placeholder {
+  color: #CE9EFF;
+  font-size: 18px;
+  transition: color 0.15s ease-in-out;
+}
+
+.input input:-ms-input-placeholder {
   color: #CE9EFF;
   font-size: 18px;
   transition: color 0.15s ease-in-out;
@@ -655,10 +685,173 @@ h5,
   opacity: .7;
 }
 
+@media only screen and (max-width: 1024px) {
+
+  .steps {
+    margin-left: 25%;
+    min-width: 940px;
+  }
+
+  .btn:not(.btn_nomedia) {
+    width: 100%;
+  }
+
+  .form {
+    max-width: 575px;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+
+  .form__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .form__item:first-child {
+    max-width: 100%;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+
+  h1,
+  .h1 {
+    font-size: 38px;
+  }
+
+  h5,
+  .h5 {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin-bottom: 54px;
+  }
+
+  .header__logo {
+    margin-right: 40px;
+  }
+
+  .form__item:hover .form__desc {
+    display: block;
+  }
+
+  .form__desc {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+
+  .wrapper__inside {
+    padding-bottom: 48px;
+  }
 
   .container {
     padding: 0 15px;
+  }
+
+  h1,
+  .h1 {
+    font-size: 28px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 10px 0;
+    margin-top: -48px;
+  }
+
+  .footer__left {
+    font-size: 14px;
+  }
+
+  .footer__right > a {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+  }
+
+  .logo img {
+    max-height: 20px;
+  }
+
+  .steps {
+    margin: 30px 0 35px 28px;
+  }
+
+  .steps__pic > img {
+    max-height: 48px;
+  }
+
+  .steps__title {
+    font-size: 14px;
+  }
+
+  .steps__desc {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 26px;
+  }
+
+  .btn_steam:before {
+    width: 43px;
+    height: 25px;
+  }
+
+  .input {
+    min-height: 41px;
+  }
+
+  .input input {
+    font-size: 14px;
+  }
+
+  .input input:-ms-input-placeholder {
+    font-size: 11px;
+  }
+
+  .input input:-moz-placeholder {
+    font-size: 11px;
+  }
+
+  .input input::-moz-placeholder {
+    font-size: 11px;
+  }
+
+  .input input::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+
+  .input input::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+
+  .input input:-ms-input-placeholder {
+    font-size: 11px;
+  }
+
+  .input input::placeholder {
+    font-size: 11px;
+  }
+
+  .form__title {
+    font-size: 14px;
+  }
+
+  .form__desc {
+    font-size: 14px;
   }
 }
 
