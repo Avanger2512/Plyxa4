@@ -119,17 +119,17 @@
       +r(1024)
         max-width: 100%
         flex-basis: auto
-    // &:hover
-    //   .form__desc
-    //     opacity: 1
-    //     +md
-    //       display: block
-    &.is-error
-      .form__title
-        color: $orange
-      .form__error
-        display: block
-        color: $orange
+    &:hover
+      .form__desc
+        opacity: 1
+        +md
+          display: block
+    // &.is-error
+    //   .form__title
+    //     color: $orange
+    //   .form__error
+    //     display: block
+    //     color: $orange
 
   &__line
     margin-bottom: 40px
@@ -140,6 +140,7 @@
     display: flex
     flex-flow: row nowrap
     justify-content: space-between
+    align-items: flex-start
     margin-bottom: 25px
     +sm
       display: block
@@ -165,6 +166,8 @@
     display: none
     padding-top: 20px
     text-align: center
+    +sm
+      font-size: 14px
   &__desc
     text-align: center
     padding: 20px 40px
@@ -185,9 +188,21 @@
       +tr(opacity .3s ease-in-out)
       &:hover
         opacity: .7
+  &__wrapper
+    position: relative
+    > .form__error
+      +sm
+        padding-top: 0
+
+        margin-bottom: 20px
+      // position: absolute
+      // width: 100%
+      // top: calc(100% - 20px)
   &_mod
     +r(1024)
       max-width: 100%
+
+
 .select
   position: relative
   display: inline-block
@@ -219,3 +234,18 @@
       font-size: 14px
       padding-top: 12px
       padding-bottom: 12px
+
+
+.is-error
+  .form__title:not(.form__title_not)
+    color: $orange
+  .form__error
+    display: block
+    color: $orange
+
+// .is-error
+//   position: relative
+//   .form__error
+//     position: absolute
+//     top: 100%
+//     display: block

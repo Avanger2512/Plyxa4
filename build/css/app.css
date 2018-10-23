@@ -854,13 +854,8 @@ h1 + .title {
   flex-basis: 488px;
 }
 
-.form__item.is-error .form__title {
-  color: #F97E63;
-}
-
-.form__item.is-error .form__error {
-  display: block;
-  color: #F97E63;
+.form__item:hover .form__desc {
+  opacity: 1;
 }
 
 .form__line {
@@ -874,6 +869,8 @@ h1 + .title {
   flex-flow: row nowrap;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-bottom: 25px;
 }
 
@@ -916,6 +913,10 @@ h1 + .title {
   opacity: .7;
 }
 
+.form__wrapper {
+  position: relative;
+}
+
 .select {
   position: relative;
   display: inline-block;
@@ -948,6 +949,15 @@ h1 + .title {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.is-error .form__title:not(.form__title_not) {
+  color: #F97E63;
+}
+
+.is-error .form__error {
+  display: block;
+  color: #F97E63;
 }
 
 .desc__caption {
@@ -1292,6 +1302,10 @@ h1 + .title {
     max-width: 100%;
   }
 
+  .form__item:hover .form__desc {
+    display: block;
+  }
+
   .form__desc {
     display: none;
     margin-bottom: 25px;
@@ -1588,9 +1602,18 @@ h1 + .title {
     margin: 0 auto 20px;
   }
 
+  .form__error {
+    font-size: 14px;
+  }
+
   .form__desc {
     font-size: 14px;
     margin-bottom: 0;
+  }
+
+  .form__wrapper > .form__error {
+    padding-top: 0;
+    margin-bottom: 20px;
   }
 
   .select {
