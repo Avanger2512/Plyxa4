@@ -12,19 +12,21 @@
   {
     icon: 'box',
     title: 'We send you a gift in Steam.',
-    text: 'Step 04'
+    text: 'Step 03'
   }
 ]%}
 
-<div class="steps">
-  {% for item in steps %}
-  <div class="steps__item {% if loop.first%} is-active {% endif%}">
-    <div class="steps__pic">
-      <img src="./img/{{item.icon}}.svg" alt="">
+<div class="steps-wrap">
+  <div class="steps js-steps">
+    {% for item in steps %}
+    <div class="steps__item {% if loop.first%} is-active {% endif%}">
+      <div class="steps__pic">
+        <img src="./img/{{item.icon}}.svg" alt="">
 
+      </div>
+      <div class="steps__title">{{item.title}}</div>
+      <div class="steps__desc">{{item.text}}</div>
     </div>
-    <div class="steps__title">{{item.title}}</div>
-    <div class="steps__desc">{{item.text}}</div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>

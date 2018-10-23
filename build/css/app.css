@@ -242,6 +242,10 @@ body {
   font-weight: 400;
 }
 
+body.is-overflow {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -273,7 +277,6 @@ img {
 
 .container_sm {
   max-width: 1024px;
-  overflow: hidden;
 }
 
 .container_xs {
@@ -326,7 +329,7 @@ h1 + .title {
 .header {
   position: relative;
   background: #2B2839;
-  padding: 24px 0 10px;
+  padding: 18px 0;
   margin-bottom: 90px;
 }
 
@@ -342,16 +345,19 @@ h1 + .title {
 }
 
 .header__logo {
-  margin-right: 100px;
+  margin-right: 105px;
+  margin-top: 6px;
 }
 
 .header__link {
+  display: inline-block;
+  vertical-align: middle;
   color: #fff;
   transition: color 0.3s ease-in-out;
 }
 
 .header__link:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 47px;
 }
 
 .header__link .icon-question {
@@ -367,7 +373,7 @@ h1 + .title {
   vertical-align: middle;
   width: 30px;
   height: 30px;
-  margin-right: 15px;
+  margin-right: 6px;
 }
 
 .header__link > span {
@@ -431,12 +437,12 @@ h1 + .title {
   position: relative;
 }
 
-.lang:hover .lang__list {
+.lang.is-open .lang__list {
   opacity: 1;
   pointer-events: auto;
 }
 
-.lang:hover .lang__icon {
+.lang.is-open .lang__icon {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -547,11 +553,12 @@ h1 + .title {
 
 .steps {
   margin: 50px 0 70px;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   border-radius: 50px;
+  width: 100%;
   box-shadow: 0 2px 96px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -879,6 +886,7 @@ h1 + .title {
   opacity: 0;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 50px;
   transition: opacity 0.15s ease-in-out;
   font-family: "RobotoRegular", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -1188,12 +1196,12 @@ h1 + .title {
 @media only screen and (max-width: 1024px) {
 
   .steps {
-    margin-left: 25%;
+    margin: 0 25%;
     min-width: 940px;
   }
 
   .steps_mod {
-    margin-left: auto;
+    margin: 50px 0 70px;
     min-width: auto;
   }
 
@@ -1250,6 +1258,12 @@ h1 + .title {
     margin-right: 40px;
   }
 
+  .steps-wrap {
+    padding: 80px 0;
+    margin: 0 -40px;
+    overflow: auto;
+  }
+
   .btn_width {
     max-width: 100%;
   }
@@ -1260,6 +1274,7 @@ h1 + .title {
 
   .form__desc {
     display: none;
+    margin-bottom: 25px;
   }
 
   .desc__caption {
@@ -1343,8 +1358,9 @@ h1 + .title {
   .header__right {
     display: none;
     position: absolute;
+    overflow: auto;
     top: 100%;
-    height: calc(100vh - 104px);
+    height: calc(100vh - 64px);
     left: 0;
     width: 100%;
     z-index: 99;
@@ -1382,7 +1398,7 @@ h1 + .title {
   .lang__list {
     right: auto;
     top: 100%;
-    padding-top: 25px;
+    padding: 25px 0;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
     background: transparent;
@@ -1392,8 +1408,13 @@ h1 + .title {
     margin-bottom: 25px;
   }
 
+  .steps-wrap {
+    padding: 50px 0;
+    margin: 0 -15px;
+  }
+
   .steps {
-    margin: 30px 0 35px 28px;
+    margin: 25px 28px -15px 28px;
     min-width: 750px;
   }
 
@@ -1421,6 +1442,9 @@ h1 + .title {
   }
 
   .steps_mod {
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
     box-shadow: none;
@@ -1546,6 +1570,7 @@ h1 + .title {
 
   .form__desc {
     font-size: 14px;
+    margin-bottom: 0;
   }
 
   .select {

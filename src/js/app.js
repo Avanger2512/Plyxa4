@@ -17,7 +17,20 @@ let burger = $('.js-burger')
 
 burger.on('click touch', () => {
   $('.header__right').toggleClass('is-open');
+  $('body').toggleClass('is-overflow');
 })
+
+let lang = $('.js-lang')
+
+lang.on('click touch', function(e) {
+  $(this).toggleClass('is-open');
+});
+
+$('body').on("click", (e) => {
+  if (lang.hasClass('is-open') && $(e.target).closest('.js-lang').length === 0 ) {
+    lang.removeClass('is-open');
+  }
+});
 
 
 
@@ -35,3 +48,16 @@ let options = {
 }
 
 slider.slick(options);
+
+//steps
+
+let steps = $('.js-steps');
+
+if (steps.length) {
+  let child = steps.find('.steps__item.is-active');
+  if (child.index() > 0) {
+    steps
+      .parent()
+      .scrollLeft($(window).width())
+  }
+}
