@@ -1148,7 +1148,7 @@ h1 + .title {
   display: block;
   margin: 0 auto;
   vertical-align: middle;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 160px;
   height: 120px;
@@ -1160,7 +1160,7 @@ h1 + .title {
 }
 
 .status.is-error .status__in:before {
-  background: url("../img/error.svg");
+  background-image: url("../img/error.svg");
 }
 
 .status.is-success {
@@ -1169,7 +1169,7 @@ h1 + .title {
 }
 
 .status.is-success .status__in:before {
-  background: url("../img/done.svg");
+  background-image: url("../img/done.svg");
 }
 
 @media only screen and (min-width: 767px) {
@@ -1219,6 +1219,11 @@ h1 + .title {
 }
 
 @media only screen and (max-width: 991px) {
+
+  .mod-width {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 
   h1,
   .h1 {
@@ -1588,6 +1593,24 @@ h1 + .title {
 
   .slider__arr {
     display: none !important;
+  }
+
+  .status-wrap {
+    margin: 40px auto;
+  }
+
+  .status {
+    min-height: 150px;
+  }
+
+  .status:after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .status__in:before {
+    width: 120px;
+    height: 86px;
   }
 }
 
