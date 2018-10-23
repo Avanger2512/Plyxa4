@@ -1,0 +1,42 @@
+---
+title: Activation page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<div class="container container_xs">
+  <div class="text-center">
+    <h1>Идет Активация</h1>
+
+    <div class="title">Мы отправим вам запрос в друзья от odin_conley в течении 2-х минут...</div>
+    <br>
+  </div>
+
+
+  <div class="desc">
+    <div class="title desc__caption">
+      <svg class="icon icon-load">
+        <use xlink:href="/img/sprite.svg#icon-load"></use>
+      </svg>
+      <span>
+        Мы отправим вам запрос в друзья от odin_conley в течении 2-х минут...
+      </span>
+    </div>
+
+    <div class="desc__img">
+      <img src="./img/steam-profile.png" alt="">
+      <div class="desc__profile profile">
+        <img class="profile__pic" src="./img/game.png" alt="">
+        <span class="profile__text">EllotDixon</span>
+      </div>
+    </div>
+
+    <div class="title desc__caption">Мы отправим вам запрос в друзья от odin_conley в течении 2-х минут...</div>
+  </div>
+
+  {% include './partials/_slider.html' %}
+</div>
+
+{% endblock %}
