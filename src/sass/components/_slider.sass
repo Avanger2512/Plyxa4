@@ -47,7 +47,21 @@
   &__arr-right
     left: calc(100% + 35px)
   &__item
+    position: relative
+    z-index: -1
     margin: 0 10px
+    img
+      transform: translateX(10%) scale(.85, .85)
+      transition: all 500ms ease-in-out
+    &.slick-active
+      position: relative
+      z-index: 2
+
+      img
+        transform: translateX(0) scale(1, 1)
+        box-shadow: 0 1px 13px 0 rgba(#000, .2)
+    &.slick-active + .slider__item
+      opacity: 1 !important
   .slick-dots
     display: inline-block
     vertical-align: middle

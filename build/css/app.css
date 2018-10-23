@@ -1043,7 +1043,30 @@ h1 + .title {
 }
 
 .slider__item {
+  position: relative;
+  z-index: -1;
   margin: 0 10px;
+}
+
+.slider__item img {
+  -ms-transform: translateX(10%) scale(0.85, 0.85);
+  transform: translateX(10%) scale(0.85, 0.85);
+  transition: all 500ms ease-in-out;
+}
+
+.slider__item.slick-active {
+  position: relative;
+  z-index: 2;
+}
+
+.slider__item.slick-active img {
+  -ms-transform: translateX(0) scale(1, 1);
+  transform: translateX(0) scale(1, 1);
+  box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.slider__item.slick-active + .slider__item {
+  opacity: 1 !important;
 }
 
 .slider .slick-dots {

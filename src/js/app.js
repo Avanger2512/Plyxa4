@@ -24,6 +24,7 @@ burger.on('click touch', () => {
 let slider = $('.js-slider');
 
 let options = {
+  fade: true,
   dots: true,
   infinite: true,
   centerMode: true,
