@@ -32,6 +32,12 @@
       +sm
         width: 43px
         height: 25px
+    &:focus
+      +md
+        & + .form__desc
+          display: block
+          opacity: 1
+
   &_width
     width: 100%
     max-width: 281px
@@ -87,6 +93,11 @@
     input
       background: linear-gradient(125deg, #31294D, #524588)
       color: rgba(#fff, .48)
+      &:focus
+        background: #fff
+        color: $black
+        &::placeholder
+          color: transparent
 
 .form
   display: flex
@@ -108,17 +119,18 @@
       +r(1024)
         max-width: 100%
         flex-basis: auto
-    &:hover
-      .form__desc
-        opacity: 1
-        +md
-          display: block
+    // &:hover
+    //   .form__desc
+    //     opacity: 1
+    //     +md
+    //       display: block
     &.is-error
       .form__title
         color: $orange
       .form__error
         display: block
         color: $orange
+
   &__line
     margin-bottom: 40px
     +sm
@@ -173,7 +185,9 @@
       +tr(opacity .3s ease-in-out)
       &:hover
         opacity: .7
-
+  &_mod
+    +r(1024)
+      max-width: 100%
 .select
   position: relative
   display: inline-block

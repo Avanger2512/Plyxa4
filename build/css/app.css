@@ -654,6 +654,7 @@ h1 + .title {
   flex-basis: 50%;
   box-shadow: none;
   background-position: center center;
+  background-size: cover;
   min-height: 188px;
   padding: 0;
 }
@@ -670,6 +671,7 @@ h1 + .title {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   color: #fff;
+  padding: 0 20px;
   font-family: "FuturaBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -816,6 +818,23 @@ h1 + .title {
   color: rgba(255, 255, 255, 0.48);
 }
 
+.input_mod input:focus {
+  background: #fff;
+  color: #353944;
+}
+
+.input_mod input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input_mod input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.input_mod input:focus::placeholder {
+  color: transparent;
+}
+
 .form {
   display: -ms-flexbox;
   display: flex;
@@ -833,10 +852,6 @@ h1 + .title {
   max-width: 488px;
   -ms-flex-preferred-size: 488px;
   flex-basis: 488px;
-}
-
-.form__item:hover .form__desc {
-  opacity: 1;
 }
 
 .form__item.is-error .form__title {
@@ -1225,6 +1240,10 @@ h1 + .title {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
   }
+
+  .form_mod {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -1264,12 +1283,13 @@ h1 + .title {
     overflow: auto;
   }
 
-  .btn_width {
-    max-width: 100%;
+  .btn_steam:focus + .form__desc {
+    display: block;
+    opacity: 1;
   }
 
-  .form__item:hover .form__desc {
-    display: block;
+  .btn_width {
+    max-width: 100%;
   }
 
   .form__desc {
@@ -1465,8 +1485,6 @@ h1 + .title {
   .steps_mod .steps__item:after, .steps_mod .steps__item:before {
     right: auto;
     top: auto;
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
     bottom: -21px;
     left: 50%;
     -ms-transform: translate(-50%, 0);
@@ -1476,6 +1494,8 @@ h1 + .title {
   .steps_mod .steps__item:before {
     bottom: -9px;
     margin-right: 14px;
+    -ms-transform: translate(-50%, 0) rotate(90deg);
+    transform: translate(-50%, 0) rotate(90deg);
   }
 
   .steps_mod .steps__item:last-child .steps__title {
