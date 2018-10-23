@@ -9,8 +9,21 @@
     display: inline-block
     margin-bottom: 30px
     border-radius: 70px
+    width: 721px
+    max-width: 100%
+    height: 128px
+    background-image: url('../img/steam-profile.png')
+    background-size: cover
     +md
       max-width: 640px
+    +sm
+      max-width: 330px
+      margin-left: -15px
+      margin-right: -15px
+      border-radius: 0
+      height: 284px
+      background-image: url('../img/steam-profile-mob.png')
+      background-size: contain
   &__img_shadow
     overflow: hidden
     &:after
@@ -23,29 +36,37 @@
       z-index: 9
       box-shadow: inset  0 1px 56px 0 rgba($green, .73)
       border-radius: 70px
+      +sm
+        border-radius: 0
   &__profile
     position: absolute
     left: 56px
-    top: 76px
+    top: 78px
     z-index: 1
     +md
       left: 50px
       top: 67px
-
-
-
+    +sm
+      left: 12px
+      top: 128px
 
 .profile
   min-width: 120px
   text-align: left
   background: rgba(29, 38, 48, 100)
   +clr
+  +sm
+    min-width: 165px
+    background: #201f2a
   &__pic
     float: left
     margin-right: 10px
     width: 28px
     height: 28px
     border: 2px solid gray
+    +sm
+      width: 34px
+      height: 34px
     img
       max-width: 100%
       object-fit: cover

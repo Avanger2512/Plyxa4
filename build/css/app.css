@@ -924,6 +924,11 @@ h1 + .title {
   display: inline-block;
   margin-bottom: 30px;
   border-radius: 70px;
+  width: 721px;
+  max-width: 100%;
+  height: 128px;
+  background-image: url("../img/steam-profile.png");
+  background-size: cover;
 }
 
 .desc__img_shadow {
@@ -945,7 +950,7 @@ h1 + .title {
 .desc__profile {
   position: absolute;
   left: 56px;
-  top: 76px;
+  top: 78px;
   z-index: 1;
 }
 
@@ -1443,6 +1448,35 @@ h1 + .title {
     font-size: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .desc__img {
+    max-width: 330px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+    height: 284px;
+    background-image: url("../img/steam-profile-mob.png");
+    background-size: contain;
+  }
+
+  .desc__img_shadow:after {
+    border-radius: 0;
+  }
+
+  .desc__profile {
+    left: 12px;
+    top: 128px;
+  }
+
+  .profile {
+    min-width: 165px;
+    background: #201f2a;
+  }
+
+  .profile__pic {
+    width: 34px;
+    height: 34px;
   }
 
   .slider {
