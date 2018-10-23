@@ -280,6 +280,14 @@ img {
   max-width: 715px;
 }
 
+.color-pink {
+  color: #E15AD4;
+}
+
+.color-green {
+  color: #86E8CB;
+}
+
 h1,
 .h1 {
   font-size: 48px;
@@ -696,6 +704,10 @@ h1 + .title {
   max-width: 281px;
 }
 
+.btn_lg {
+  width: 100%;
+}
+
 .input {
   white-space: nowrap;
   overflow: hidden;
@@ -1091,6 +1103,73 @@ h1 + .title {
 
 .slider .slick-dots li.slick-active button {
   background: #fff;
+}
+
+.status-wrap {
+  max-width: 360px;
+  width: 100%;
+  margin: 60px auto;
+}
+
+.status {
+  position: relative;
+  display: block;
+  min-height: 185px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.status:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background: url("../img/lines.png") no-repeat;
+  background-size: contain;
+}
+
+.status__text {
+  margin-top: -11px;
+  font-size: 18px;
+  color: #fff;
+  font-family: "FuturaBold", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.status__in:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 120px;
+}
+
+.status.is-error {
+  background-image: linear-gradient(to right, #E2639A, #FF6974);
+  box-shadow: 0 -33px 74px 0 rgba(221, 94, 163, 0.58);
+}
+
+.status.is-error .status__in:before {
+  background: url("../img/error.svg");
+}
+
+.status.is-success {
+  background-image: linear-gradient(to right, #9CE660, #D8F796);
+  box-shadow: 0 -26px 59px 0 rgba(179, 241, 104, 0.5);
+}
+
+.status.is-success .status__in:before {
+  background: url("../img/done.svg");
 }
 
 @media only screen and (min-width: 767px) {

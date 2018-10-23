@@ -1,0 +1,28 @@
+---
+title: Activation Completed page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<div class="container container_sm">
+  <div class="text-center">
+    <h1>Activation Completed</h1>
+
+    <h5><span class="color-green">Eco was sent your Steam account. </span> Thank you.</h5>
+  </div>
+
+  <div class="status-wrap">
+    <div class="status is-success">
+      <div class="status__in"></div>
+      <div class="status__text">Done</div>
+    </div>
+
+    <a href="#" class="form-el btn btn_lg ">Activate another key</a>
+  </div>
+
+  {% include './partials/_slider.html' %}
+</div>
+
+{% endblock %}

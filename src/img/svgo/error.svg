@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="166px" height="128px" viewBox="0 0 166 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 41</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="2" cy="29" r="2"></circle>
+        <filter x="-475.0%" y="-425.0%" width="1050.0%" height="1050.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.396078431   0 0 0 0 0.690196078   0 0 0 0 0.4  0 0 0 0.55 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="129" cy="64" r="2"></circle>
+        <filter x="-475.0%" y="-425.0%" width="1050.0%" height="1050.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.396078431   0 0 0 0 0.690196078   0 0 0 0 0.4  0 0 0 0.55 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-5" cx="10" cy="3" r="2"></circle>
+        <filter x="-475.0%" y="-425.0%" width="1050.0%" height="1050.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.396078431   0 0 0 0 0.690196078   0 0 0 0 0.4  0 0 0 0.55 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-7" cx="142" cy="90" r="2"></circle>
+        <filter x="-475.0%" y="-425.0%" width="1050.0%" height="1050.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.396078431   0 0 0 0 0.690196078   0 0 0 0 0.4  0 0 0 0.55 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-9" cx="39" cy="2" r="2"></circle>
+        <filter x="-475.0%" y="-425.0%" width="1050.0%" height="1050.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.396078431   0 0 0 0 0.690196078   0 0 0 0 0.4  0 0 0 0.55 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-11" cx="118" cy="104" r="2"></circle>
+        <filter x="-475.0%" y="-425.0%" width="1050.0%" height="1050.0%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.396078431   0 0 0 0 0.690196078   0 0 0 0 0.4  0 0 0 0.55 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="r3-copy-5" transform="translate(-882.000000, -368.000000)">
+            <g id="Group-8" transform="translate(780.000000, 357.000000)">
+                <g id="Group-14">
+                    <g id="Group-5">
+                        <g id="Group-17">
+                            <g id="Path-7-Copy">
+                                <g id="Path-2">
+                                    <g id="Group-10">
+                                        <g>
+                                            <g id="Path-2-+-Path-2-Mask">
+                                                <g id="Group-41">
+                                                    <g transform="translate(113.000000, 20.000000)">
+                                                        <g id="Oval-3">
+                                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                                        </g>
+                                                        <g id="Oval-3-Copy-8">
+                                                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                                        </g>
+                                                        <g id="Oval-3-Copy">
+                                                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                                        </g>
+                                                        <g id="Oval-3-Copy-7">
+                                                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                                        </g>
+                                                        <g id="Oval-3-Copy-2">
+                                                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                                                        </g>
+                                                        <g id="Oval-3-Copy-6">
+                                                            <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                                                        </g>
+                                                        <g id="Group-2" transform="translate(36.000000, 22.000000)" fill="#FFFFFF">
+                                                            <polygon id="done-[#1476]" points="55.8845035 55.8845035 6.20938928 55.8845035 6.20938928 6.20938928 31.0469464 6.20938928 31.0469464 0 0 0 0 62.0938928 62.0938928 62.0938928 62.0938928 31.0469464 55.8845035 31.0469464"></polygon>
+                                                            <polygon id="close-[#1511]" stroke="#FFFFFF" stroke-width="3.10469464" points="32.8427018 31.0469464 43.465725 41.6699696 41.6687277 43.465725 31.0469464 32.8427018 20.4239232 43.465725 18.6281678 41.6699696 29.2499491 31.0469464 18.6281678 20.4239232 20.4239232 18.6281678 31.0469464 29.251191 41.6687277 18.6281678 43.465725 20.4239232"></polygon>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

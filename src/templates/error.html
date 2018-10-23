@@ -1,0 +1,29 @@
+---
+title: Activation Error page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<div class="container container_sm">
+  <div class="text-center">
+    <h1>Activation Error</h1>
+
+    <h5><span class="color-pink">131231qwe12 code had an error during activation.</span> Contact us to resolve it.</h5>
+  </div>
+
+
+  <div class="status-wrap">
+    <div class="status is-error">
+      <div class="status__in"></div>
+      <div class="status__text">Error</div>
+    </div>
+
+    <a href="#" class="form-el btn btn_lg ">Activate another key</a>
+  </div>
+  
+  {% include './partials/_slider.html' %}
+</div>
+
+{% endblock %}

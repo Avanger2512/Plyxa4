@@ -1,0 +1,52 @@
+.status-wrap
+  max-width: 360px
+  width: 100%
+  margin: 60px auto
+
+.status
+  position: relative
+  display: block
+  min-height: 185px
+  border-radius: 60px
+  overflow: hidden
+  margin-bottom: 40px
+  text-align: center
+  padding: 10px
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 250px
+    height: 250px
+    background: url('../img/lines.png') no-repeat
+    background-size: contain
+  &__text
+    margin-top: -11px
+    font-size: 18px
+    color: #fff
+    +futura-b
+
+  &__in
+    &:before
+      content: ''
+      display: block
+      margin: 0 auto
+      vertical-align: middle
+      background-size: contain
+      background-repeat: no-repeat
+      width: 160px
+      height: 120px
+  &.is-error
+    background-image: linear-gradient(to right, #E2639A, #FF6974)
+    box-shadow: 0 -33px 74px 0 rgba(#DD5EA3, .58)
+    .status__in
+      &:before
+        background: url('../img/error.svg')
+  &.is-success
+    background-image: linear-gradient(to right, #9CE660, #D8F796)
+    box-shadow: 0 -26px 59px 0 rgba(#B3F168, .5)
+    .status__in
+      &:before
+        background: url('../img/done.svg')
