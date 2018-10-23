@@ -1,11 +1,21 @@
-<div class="slider js-slider">
-  {% for i in range(0,3) %}
-  <div class="slider__item">
-    <img src="./img/cap.jpg" alt="">
+<div class="slider ">
+  <div class="slider__in js-slider">
+    {% for i in range(0,5) %}
+    <div class="slider__item">
+      <img src="./img/cap.jpg" alt="">
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 
-  <div class="slider__arr slider__arr-left js-slider-arr-left"></div>
-  <div class="slider__arr slider__arr-right js-slider-arr-right"></div>
+  <button type="button" class="slider__arr slider__arr-left js-slider-arr-left">
+    <svg class="icon icon-arr">
+      <use xlink:href="/img/sprite.svg#icon-arr"></use>
+    </svg>
+  </button>
+  <button type="button" class="slider__arr slider__arr-right js-slider-arr-right">
+    <svg class="icon icon-arr">
+      <use xlink:href="/img/sprite.svg#icon-arr"></use>
+    </svg>
+  </button>
 
 </div>

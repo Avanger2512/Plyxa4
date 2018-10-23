@@ -1,0 +1,67 @@
+.slider
+  position: relative
+  max-width: 556px
+  margin: 100px auto 60px
+  text-align: center
+  +md
+    max-width: 494px
+    margin: 80px auto 30px
+  +sm
+    max-width: 350px
+    margin: 40px auto
+  &__arr
+    position: absolute
+    top: calc(50% - 15px)
+    transform: translateY(-50%)
+    display: inline-block
+    vertical-align: middle
+    width: 54px
+    height: 54px
+    border-radius: 50%
+    border: 1px solid #fff
+    text-align: center
+    line-height: 60px
+    +md
+      width: 48px
+      height: 48px
+      line-height: 50px
+    +sm
+      display: none !important
+    &:hover
+      border-color: $pink
+      .icon
+        color: $pink
+    .icon
+      width: 10px
+      height: 16px
+      color: #fff
+      margin-right: -2px
+      +md
+        width: 9px
+        height: 14px
+  &__arr-left
+    right: calc(100% + 35px)
+    .icon
+      transform: rotate(180deg)
+      margin-left: -2px
+  &__arr-right
+    left: calc(100% + 35px)
+  &__item
+    margin: 0 10px
+  .slick-dots
+    display: inline-block
+    vertical-align: middle
+    margin: 0 auto
+    button
+      font-size: 0
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: rgba(#fff, .3)
+    li
+      display: inline-block
+      vertical-align: middle
+      margin: 0 11px
+      &.slick-active
+        button
+          background: #fff

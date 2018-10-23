@@ -1,7 +1,4 @@
-// import $ from "../../node_modules/jquery";
-
 let input = $('.js-input');
-
 
 input
   .parent()
@@ -18,7 +15,22 @@ input.on('keyup', function(){
 
 let burger = $('.js-burger')
 
-
-burger.on('click', () => {
-  $('.header__right').toggleClass('is-open')
+burger.on('click touch', () => {
+  $('.header__right').toggleClass('is-open');
 })
+
+
+
+let slider = $('.js-slider');
+
+let options = {
+  dots: true,
+  infinite: true,
+  centerMode: true,
+  speed: 300,
+  slidesToShow: 1,
+  prevArrow: $('.js-slider-arr-left'),
+  nextArrow: $('.js-slider-arr-right')
+}
+
+slider.slick(options);

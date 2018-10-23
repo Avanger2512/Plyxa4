@@ -96,48 +96,64 @@
         </header>
         <!-- BEGIN content -->
 
-        <div class="container container_xs">
+        <div class="container container_sm">
           <div class="text-center">
             <h1>Идет Активация</h1>
 
             <div class="title">Мы отправим вам запрос в друзья от odin_conley в течении 2-х минут...</div>
-            <br>
           </div>
-
-          <div class="desc">
+          <div class="desc text-center">
             <div class="title desc__caption">
-              <svg class="icon icon-load">
+              <svg class="icon icon-load title__icon">
                 <use xlink:href="/img/sprite.svg#icon-load"></use>
               </svg>
               <span>
-                Мы отправим вам запрос в друзья от odin_conley в течении 2-х минут...
+                Запрос отправлен. Пожалуйста, примите его в Steam или на SteamCommunity
               </span>
             </div>
 
-            <div class="desc__img">
+            <div class="desc__img desc__img_shadow">
               <img src="./img/steam-profile.png" alt="">
               <div class="desc__profile profile">
-                <img class="profile__pic" src="./img/game.png" alt="">
+                <div class="profile__pic">
+                  <img class="" src="./img/bg.jpg" alt="">
+                </div>
                 <span class="profile__text">EllotDixon</span>
               </div>
             </div>
 
-            <div class="title desc__caption">Мы отправим вам запрос в друзья от odin_conley в течении 2-х минут...</div>
+            <div class="title">После этого нам понадобиться 40-50 сек, что бы подтвердить это</div>
           </div>
 
-          <div class="slider js-slider">
-            <div class="slider__item">
-              <img src="./img/cap.jpg" alt="">
-            </div>
-            <div class="slider__item">
-              <img src="./img/cap.jpg" alt="">
-            </div>
-            <div class="slider__item">
-              <img src="./img/cap.jpg" alt="">
+          <div class="slider ">
+            <div class="slider__in js-slider">
+              <div class="slider__item">
+                <img src="./img/cap.jpg" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="./img/cap.jpg" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="./img/cap.jpg" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="./img/cap.jpg" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="./img/cap.jpg" alt="">
+              </div>
             </div>
 
-            <div class="slider__arr slider__arr-left js-slider-arr-left"></div>
-            <div class="slider__arr slider__arr-right js-slider-arr-right"></div>
+            <button type="button" class="slider__arr slider__arr-left js-slider-arr-left">
+              <svg class="icon icon-arr">
+                <use xlink:href="/img/sprite.svg#icon-arr"></use>
+              </svg>
+            </button>
+            <button type="button" class="slider__arr slider__arr-right js-slider-arr-right">
+              <svg class="icon icon-arr">
+                <use xlink:href="/img/sprite.svg#icon-arr"></use>
+              </svg>
+            </button>
 
           </div>
         </div>
@@ -161,6 +177,7 @@
 
     <!-- BEGIN scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
 
