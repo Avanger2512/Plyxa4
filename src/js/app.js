@@ -68,15 +68,29 @@ function validateEmail(email) {
   let re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
 }
+function validateFill(input) {
+  let re = /.+/;
+  return re.test(input);
+}
 
 function validate() {
-  let email = $("input[type=email]").val();
-  let parent = $("input[type=email]").closest('form');
+  let email = $(this).find("input[type=email]").val();
+  let parent = $(this);
+  let input = $(this).find("input[type=text]").val();
 
-  if (validateEmail(email)) {
-    parent.removeClass('is-error');
+  if (email === undefined) {
+    if (input.length !== 0 && validateFill(input)) {
+      parent.removeClass('is-error');
+    } else {
+      parent.addClass('is-error');
+    }
   } else {
-    parent.addClass('is-error');
+    if (email.length !== 0 && validateEmail(email)) {
+      $(parent).removeClass('is-error');
+    }  else {
+      $(parent).addClass('is-error');
+    }
+
   }
   return false;
 }
