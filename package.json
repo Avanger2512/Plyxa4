@@ -11,7 +11,7 @@
     "browser-sync": "^2.12.3",
     "css-mqpacker": "^4.0.0",
     "del": "^2.2.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-filter": "^4.0.0",
     "gulp-if": "^2.0.0",
     "gulp-notify": "^2.2.0",
